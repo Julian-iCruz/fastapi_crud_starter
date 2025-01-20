@@ -1,6 +1,6 @@
 # FastAPI Project Template
 
-This repository is a template for starting projects with **FastAPI**, with Docker configuration and dependency management using **Poetry**.  
+This repository is a template for starting projects with **FastAPI**, with Docker configuration and dependency management using **Poetry**.
 > Este repositorio es una plantilla para iniciar proyectos con **FastAPI**, con configuración para Docker y gestión de dependencias usando **Poetry**.
 
 ## Table of Contents
@@ -19,18 +19,18 @@ This repository is a template for starting projects with **FastAPI**, with Docke
 
 ## Project Structure
 
-The project includes a basic configuration for a **FastAPI** API and configuration files for Docker. Below is a description of the project structure and configuration.  
+The project includes a basic configuration for a **FastAPI** API and configuration files for Docker. Below is a description of the project structure and configuration.
 > El proyecto incluye una configuración básica para una API en **FastAPI** y archivos de configuración para Docker. A continuación, se describe la estructura y configuración del proyecto.
 
 ### Key Files:
 
-- `pyproject.toml`: Poetry project configuration, including dependencies and development environment setup.  
+- `pyproject.toml`: Poetry project configuration, including dependencies and development environment setup.
   > Configuración del proyecto con Poetry, incluyendo dependencias y configuración para el entorno de desarrollo.
-- `docker-compose.yml`: Docker Compose configuration file for setting up the project environment.  
+- `docker-compose.yml`: Docker Compose configuration file for setting up the project environment.
   > Archivo de configuración para iniciar el proyecto utilizando Docker y Docker Compose.
-- `dockerfiles/`: Folder containing two Dockerfiles, one for development and one for production.  
+- `dockerfiles/`: Folder containing two Dockerfiles, one for development and one for production.
   > Carpeta que contiene dos Dockerfiles, uno para un entorno de desarrollo y otro para el entorno de producción.
-- `app/main.py`: The main file with the **FastAPI** application setup.  
+- `app/main.py`: The main file with the **FastAPI** application setup.
   > El archivo principal con la configuración de la API en **FastAPI**.
 
 ---
@@ -39,9 +39,9 @@ The project includes a basic configuration for a **FastAPI** API and configurati
 
 ### Prerequisites
 
-1. Have **Docker** and **Docker Compose** installed.  
+1. Have **Docker** and **Docker Compose** installed.
    > Tener **Docker** y **Docker Compose** instalados.
-2. Have **Poetry** installed on your machine for dependency management.  
+2. Have **Poetry** installed on your machine for dependency management.
    > Tener **Poetry** instalado en tu máquina para la gestión de dependencias.
 
 ### Clone the Repository
@@ -56,7 +56,7 @@ cd fastapi-project-template
 
 ### Using Docker Compose
 
-You can bring up the project containers using Docker Compose, which will use the `docker-compose.yml` and corresponding Dockerfiles to set up the development and production environments.  
+You can bring up the project containers using Docker Compose, which will use the `docker-compose.yml` and corresponding Dockerfiles to set up the development and production environments.
 > Puedes levantar los contenedores del proyecto con Docker Compose, que utilizará el archivo `docker-compose.yml` y los Dockerfiles correspondientes para configurar los entornos de desarrollo y producción.
 
 #### Start in the Production Environment
@@ -77,7 +77,7 @@ docker-compose up fastapi-project-template-debug
 
 ### Install Dependencies
 
-If you want to install dependencies locally instead of using Docker, you can do it with Poetry:  
+If you want to install dependencies locally instead of using Docker, you can do it with Poetry:
 > Si deseas instalar las dependencias localmente en lugar de usar Docker, puedes hacerlo con Poetry:
 
 ```bash
@@ -88,7 +88,7 @@ poetry install --no-root
 
 ### Run the Development Server
 
-To run the FastAPI server directly, use the following command:  
+To run the FastAPI server directly, use the following command:
 > Para ejecutar el servidor de FastAPI directamente, usa el siguiente comando:
 
 ```bash
