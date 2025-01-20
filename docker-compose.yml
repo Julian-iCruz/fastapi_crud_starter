@@ -1,0 +1,27 @@
+services:
+  fastapi-project-template:
+    build:
+      context: ./
+      dockerfile: dockerfiles/dockerfile.local
+    image: fastapi-project-template:latest
+    container_name: fastapi-project-template
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+
+  fastapi-project-template-debug:
+    build:
+      context: ./
+      dockerfile: dockerfiles/dockerfile.debug
+    image: fastapi-project-template:debug
+    container_name: fastapi-project-template-debug
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - 5678:5678
+      - 8081:8080
