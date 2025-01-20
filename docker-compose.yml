@@ -19,12 +19,12 @@ services:
     volumes:
       - .${PGADMIN_SERVER_JSON_FILE}:/servers.json
 
-  fastapi-project-template:
+  fastapi-crud-starter:
     build:
       context: ./
       dockerfile: dockerfiles/dockerfile.local
-    image: fastapi-project-template:latest
-    container_name: fastapi-project-template
+    image: fastapi-crud-starter:latest
+    container_name: fastapi-crud-starter
     volumes:
       - ./app:/app
     env_file:
@@ -34,12 +34,12 @@ services:
     depends_on:
       - postgres
 
-  fastapi-project-template-debug:
+  fastapi-crud-starter-debug:
     build:
       context: ./
       dockerfile: dockerfiles/dockerfile.debug
-    image: fastapi-project-template:debug
-    container_name: fastapi-project-template-debug
+    image: fastapi-crud-starter:debug
+    container_name: fastapi-crud-starter-debug
     volumes:
       - ./app:/app
     env_file:
