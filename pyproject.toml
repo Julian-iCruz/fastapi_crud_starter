@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "fastapi-project-template"
+name = "fastapi-crud-starter"
 version = "0.0.1"
-description = "Template for FastAPI projects"
+description = "FastAPI CRUD starter"
 authors = ["user <user@mail.com>"]
 readme = "README.md"
 
@@ -9,6 +9,9 @@ readme = "README.md"
 python = "^3.12"
 fastapi = "^0.115.6"
 uvicorn = "^0.34.0"
+sqlalchemy = "^2.0.37"
+psycopg2-binary = "^2.9.10"
+alembic = "^1.14.1"
 
 
 [tool.poetry.group.dev.dependencies]
