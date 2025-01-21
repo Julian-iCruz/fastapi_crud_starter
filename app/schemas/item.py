@@ -8,6 +8,7 @@ class ItemBase(BaseModel):
     description: Optional[str] = None
     quantity: int = 0
     cost: float = 0.0
+    status: str = "active"
 
 
 class ItemCreate(ItemBase):

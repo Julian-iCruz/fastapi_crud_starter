@@ -14,3 +14,4 @@ class Item(Base):
     description = Column(String(255), nullable=True)
     quantity = Column(Integer, default=0)
     cost = Column(Float, default=0.0)
+    status = Column(String(50), default="active")
